@@ -90,7 +90,8 @@ class _PriceScreenState extends State<PriceScreen> {
             selectedCurrency: selectedCurrency),
       ));
     }
-    return Column(children: cryptoCards);
+    return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch, children: cryptoCards);
   }
 
   String selectedCurrency = 'USD';
